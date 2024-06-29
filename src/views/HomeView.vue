@@ -1,18 +1,20 @@
 <template>
   <div class="home">
     <navbar />
-    <h2>Ini Home</h2>    
+    <hero/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Navbar from '@/components/Navbar.vue'
+import Hero from '@/components/Hero.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    Navbar
+    Navbar,
+    Hero
   }
 }
 </script>

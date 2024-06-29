@@ -1,5 +1,5 @@
 <template>
- <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+ <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-4">
     <div class="container">
       <div class="container ">
       <a class="navbar-brand fw-bold" href="#">Noesantara</a>
@@ -27,12 +27,22 @@
           </li>
         </ul>
       </div>
+      <div>
+        <ul class="">
+          <li class="mb-2 ">
+            <a href="#" class="">
+              <i class="fas fa-shopping-cart mr-2"></i>
+               Keranjang</a>
+          </li>
+        </ul>
+      </div>
     </div>
     </div>
   </nav>
 </template>
 
 <script>
+
 export default {
   name: "AppNavbar",
 };
