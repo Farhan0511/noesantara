@@ -1,3 +1,8 @@
+:root {
+    --primary: #4eb883;
+    --secondary: #E9F9F4;
+}
+
 .router-link-exact-active {
     font-weight: bold;
 }
@@ -13,4 +18,8 @@ ul li {
 ul li a{
     text-decoration: none;
     color: black;
+}
+
+.btn{
+    background: var(--primary);
 }

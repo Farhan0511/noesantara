@@ -26,13 +26,13 @@
             <router-link class="nav-link" to="/about">About</router-link>
           </li>
         </ul>
-      </div>
-      <div>
-        <ul class="">
-          <li class="mb-2 ">
-            <a href="#" class="">
-              <i class="fas fa-shopping-cart mr-2"></i>
-               Keranjang</a>
+        
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <router-link class="nav-link" to="/keranjang">Keranjang
+              <b-icon-bag></b-icon-bag>
+              <span class="badge badge-success ml-2">0</span>
+            </router-link>
           </li>
         </ul>
       </div>
