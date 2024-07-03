@@ -2,14 +2,22 @@
   <div class="home">
     <navbar />
     <div class="mt-5 container">
-      <hero/>
+      <hero />
 
-      <div class="best row">
+      <div class="mt-5 row container">
         <div class="col">
-          <h3>Best Food</h3>
+          <h2>Best <strong>Food</strong></h2>
         </div>
         <div class="col">
-          <router-link to="/foods" class="btn btn-success float-right">Lihat semua</router-link>
+          <router-link to="/foods" class="btn btn-success float-right"
+            ><b-icon-eye></b-icon-eye> Lihat semua</router-link
+          >
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col md-3 mt-4" v-for="product in products" :key="product.id">
+          <card-product :product="product"/>
         </div>
       </div>
     </div>
@@ -18,14 +26,33 @@
 
 <script>
 // @ is an alias to /src
-import Navbar from '@/components/Navbar.vue'
-import Hero from '@/components/Hero.vue'
+import Navbar from "@/components/Navbar.vue";
+import Hero from "@/components/Hero.vue";
+import CardProduct from "@/components/CardProduct.vue";
+import axios from "axios";
 
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
     Navbar,
-    Hero
-  }
-}
+    Hero,
+    CardProduct,
+  },
+  data() {
+    return {
+      products: [],
+    };
+  },
+  methods: {
+    setProducts(data) {
+      this.products = data;
+    },
+  },
+  mounted() {
+    axios
+      .get("http://localhost:3000/best-products")
+      .then((response) => this.setProducts(response.data))
+      .catch((error) => console.log(error))
+  },
+};
 </script>
