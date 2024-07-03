@@ -56,3 +56,13 @@ Pastikan Anda telah menginstal berikut ini di mesin Anda:
     ```
 
 2. Buka aplikasi di browser dengan mengunjungi [http://localhost:8080](http://localhost:8080).
+
+## Kontribusi
+
+Jika Anda ingin berkontribusi pada proyek ini, silakan fork repository ini dan buat pull request dengan perubahan Anda. Harap pastikan bahwa perubahan Anda sudah diuji dengan baik.
+
+    1. Fork repository ini.
+    2. Buat branch fitur baru: git checkout -b fitur-baru.
+    3. Commit perubahan Anda: git commit -m 'Tambah fitur baru'.
+    4. Push ke branch: git push origin fitur-baru.
+    5. Buat pull request.
