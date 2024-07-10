@@ -1,5 +1,4 @@
-# Noesantara
-
+<p align="center">Noesantara</p> <br>
 Noesantara adalah aplikasi web yang dibangun menggunakan Vue.js untuk menampilkan produk-produk terbaik dari sebuah API. Aplikasi ini diimplementasikan dengan menggunakan Axios untuk mengambil data dari server.
 
 ## Fitur
